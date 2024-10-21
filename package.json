@@ -20,5 +20,8 @@
   "homepage": "https://github.com/VarunKashyap1810/scm2.0#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "scm2.0": "file:"
   }
 }
