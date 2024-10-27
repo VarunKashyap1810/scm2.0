@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title})}" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Services</title>
 </head>
@@ -9,5 +9,8 @@
         <h2>Service offered by SCM</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eligendi debitis similique eius, consequatur dignissimos vitae dolorem blanditiis libero necessitatibus inventore, impedit ipsum, autem quia. In quod quo maiores commodi.
     </section>
+    <script>
+        console.log("Services Page");
+    </script>
 </body>
 </html>

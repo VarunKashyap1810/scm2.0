@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
-    
 </head>
 <body>
-    <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4">
-        <h1 class="text-2 font-bold" data-th-text="${name}">Welcome to Home Page</h1>
-        <p>Youtube channel : <span data-th-text="${youtubeChannel}"></span></p>
+    <div id="content">
+        <h1>Welcome to Home Page</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem autem accusantium distinctio eveniet adipisci itaque amet ullam suscipit doloremque! Velit nisi eum illum libero. Autem fugiat itaque doloribus pariatur vero.</p>
     </div>
+    <script>
+        console.log("Home Page");
+    </script>
 </body>
 </html>
